@@ -16,5 +16,15 @@ namespace Date_Picker_HW3
         {
             InitializeComponent();
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+            textBox1.Text = dateTimePicker1.Value.ToString();
+        }
     }
 }
